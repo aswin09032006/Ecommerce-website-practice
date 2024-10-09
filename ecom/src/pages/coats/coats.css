@@ -1,0 +1,11 @@
+.coats-container {
+    padding: 20px;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.item-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}

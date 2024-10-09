@@ -1,0 +1,44 @@
+.jackets-container {
+    padding: 20px;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.item-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px; /* Add some spacing between the items */
+}
+
+/* Add responsiveness */
+@media (max-width: 1200px) {
+    .item-cards {
+        justify-content: space-around;
+    }
+}
+
+@media (max-width: 992px) {
+    .item-cards {
+        flex-direction: row;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 768px) {
+    .item-cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        width: 80%; /* Make the cards take up most of the screen on smaller devices */
+    }
+}
+
+@media (max-width: 576px) {
+    .card {
+        width: 100%;
+        margin: 10px 0; /* Add margin for spacing */
+    }
+}

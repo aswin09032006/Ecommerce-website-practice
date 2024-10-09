@@ -1,0 +1,222 @@
+.product-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 50px;
+    padding: 30px;
+    border-radius: 12px;
+    height: 75vh;
+    width: 50vw;
+    transition: box-shadow 0.3s ease;
+    background-color: rgba(243, 243, 243, 0.216);
+    gap: 20px;
+}
+
+.product-images-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 50%;
+    padding-right: 20px;
+}
+
+.product-images-wrapper .product-image {
+    width: 400px;
+    height: 100%;
+    object-fit: contain;
+    margin-bottom: 20px;
+    border-radius: 12px;
+    border: 1px solid lightgray;
+}
+
+.product-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: self-start;
+    max-width: 45%;
+    border: 1px solid lightgray;
+    padding: 20px;
+    border-radius: 12px;
+}
+
+.product-title {
+    font-size: 2rem;
+    font-weight: 500;
+    color: #202124;
+    margin-bottom: 15px;
+}
+
+.product-info .product-price {
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.product-shipping {
+    font-size: 0.95rem;
+    color: #5f6368;
+    margin-bottom: 30px;
+}
+
+.product-info .product-add-to-cart,.product-info .product-buy-now {
+    padding: 12px 18px;
+    font-size: 1rem;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: 500;
+    width: 150px;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product-info-buttons {
+    display: flex;
+    gap: 20px;
+    height: 40px;
+}
+
+.product-add-to-cart {
+    background-color: transparent;
+    color: #000000;
+    border: 1px solid #dadce0;
+    /* margin-bottom: 15px; */
+}
+
+.product-add-to-cart:hover {
+    background-color: #b0b0b0;
+}
+
+.product-buy-now {
+    background-color: #2a2a2a;
+    color: #ffffff;
+    border: none;
+}
+
+.product-buy-now a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.product-buy-now:hover {
+    background-color: #000000;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+.product-policy {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+.policy-items {
+    display: flex;
+    gap: 20px;
+}
+
+.product-policy h3 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.policy-item {
+    color: #333;
+}
+
+.policy-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1rem;
+    color: #363636;
+    margin-bottom: 8px;
+}
+
+.policy-item strong {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #000000;
+}
+
+@media (max-width: 768px) {
+    .product-container {
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+        height: auto;
+        width: 95vw;
+    }
+
+    .product-images-wrapper, .product-info {
+        max-width: 100%;
+    }
+
+    .product-title {
+        font-size: 1.8rem;
+    }
+
+    .product-price {
+        font-size: 1.3rem;
+    }
+
+    .product-add-to-cart, .product-buy-now {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+@media (max-width: 1100px) {
+    .product-container {
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+        width: 90vw;
+        height: auto;
+    }
+    
+    .product-images-wrapper {
+        max-width: 100%;
+        padding-right: 0;
+    }
+    
+    .product-image {
+        width: 100%;
+        height: auto;
+        margin-bottom: 10px;
+    }
+
+    .product-info {
+        max-width: 100%;
+        padding: 15px;
+        border: none;
+    }
+
+    .product-title {
+        font-size: 1.6rem;
+    }
+
+    .product-price {
+        font-size: 1.2rem;
+    }
+
+    .product-add-to-cart, .product-buy-now {
+        width: 100%;
+        /* padding: 10px; */
+    }
+}
+
+@media (max-width: 480px) {
+    .product-title {
+        font-size: 1.4rem;
+    }
+
+    .product-price {
+        font-size: 1rem;
+    }
+
+    .policy-item {
+        font-size: 0.9rem;
+    }
+}

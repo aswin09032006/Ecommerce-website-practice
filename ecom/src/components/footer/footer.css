@@ -1,0 +1,113 @@
+.footer-container {
+    overflow-x: hidden;
+  }
+  
+  .footer-content-container {
+    padding-top: 50px;
+    display: flex;
+    align-items: flex-start;
+    color: #fff;
+    width: 100vw;
+    justify-content: space-around;
+    background: #121212;
+    padding: 30px;
+  }
+  
+  .footer-content-header {
+    color: #fff;
+    font-size: 30px;
+  }
+  
+  .footer-content-header-link {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: white;
+  }
+  
+  .footer-content-company,
+  .footer-content-services,
+  .footer-content-quick-links {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .footer-content-company a,
+  .footer-content-services a,
+  .footer-content-quick-links a {
+    text-decoration: none;
+    color: white;
+  }
+  
+  .footer-content-icons-container {
+    display: flex;
+    gap: 10px;
+    font-size: 25px;
+  }
+  
+  .footer-content-icons-container a {
+    text-decoration: none;
+    color: #fff;
+  }
+  
+  footer {
+    text-align: center;
+    background: #121212;
+    color: white;
+    padding: 10px;
+    padding-top: 50px;
+  }
+  .footer-logo-image {
+    height: 125px;
+    margin-top: 3%;
+  }
+  
+  @media (max-width: 768px) {
+    .footer-content-container {
+      margin-left: 20px;
+      flex-direction: column;
+      align-items: left;
+      gap: 20px;
+    }
+  
+    .footer-content-company,
+    .footer-content-services,
+    .footer-content-quick-links {
+      align-items: left;
+      text-align: left;
+    }
+  
+    .footer-content-company h2,
+    .footer-content-services h2,
+    .footer-content-quick-links h2 {
+      font-weight: 700;
+      font-size: 20px;
+    }
+  
+    .footer-content-icons-container {
+      justify-content: center;
+    }
+  }
+  
+  @media (max-width: 912px) {
+    .footer-logo-image {
+      height: 100px;
+    }
+  }
+  
+  @media (max-width: 540px) {
+    .footer-content-header-link {
+      flex-direction: row-reverse;
+    }
+    .footer-logo-image {
+      height: 50px;
+    }
+    footer {
+      padding: 10px;
+      font-size: 0.7em;
+    }
+  }
+  

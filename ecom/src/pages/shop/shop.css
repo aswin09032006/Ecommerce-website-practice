@@ -1,0 +1,370 @@
+.shop {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.shop-about-text {
+    font-size: 1.8rem;
+    color: #333;
+    line-height: 1.6;
+    text-align: center;
+    padding: 20px;
+    max-width: 90vw;
+    margin: 100px auto;
+}
+
+.shop-about-text img {
+    width: 200px;
+    height: 40px;
+    vertical-align: middle;
+    border-radius: 25px;
+    transition: transform 0.3s ease;
+    object-fit: cover;
+    filter: grayscale(100%);
+}
+
+.shop-about-text span {
+    color: #000;
+    font-weight: 600;
+}
+
+@media (max-width: 768px) {
+    .shop-about-text {
+        font-size: 1.5rem;
+        padding: 15px;
+    }
+
+    .shop-about-text img {
+        width: 60px;
+    }
+}
+
+@media (max-width: 480px) {
+    .shop-about-text {
+        font-size: 1.2rem;
+        margin: 50px auto;
+    }
+
+    .shop-about-text img {
+        width: 50px;
+    }
+}
+
+
+.featured-collections {
+    text-align: center;
+    padding: 40px 0;
+}
+
+h2 {
+    margin-bottom: 20px;
+}
+
+.collections-grid {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.collection-item {
+    width: 200px;
+    height: 200px;
+    background-color: #f1f1f1;
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+}
+
+.customer-testimonials {
+    padding: 40px 0;
+    text-align: center;
+}
+
+.customer-testimonials h2 {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.testimonial-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin: 20px;
+}
+
+.testimonial-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #F4F6F8;
+    padding: 20px;
+    max-width: 300px;
+    margin: 10px;
+    text-align: left;
+    border-radius: 5px;
+    border: 1px solid lightgray;
+    transition: transform 0.2s;
+}
+
+.testimonial-card:hover {
+    transform: scale(1.02);
+}
+
+.stars {
+    display: flex;
+    gap: 0.125rem;
+    color: rgb(238, 203, 8);
+}
+
+.star {
+    height: 1.25rem;
+    width: 1.25rem;
+}
+
+.infos {
+    margin-top: 1rem;
+}
+
+.date-time {
+    color: rgba(7, 63, 216, 1);
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.description {
+    margin-top: 0.4rem;
+    line-height: 1.625;
+    color: rgba(107, 114, 128, 1);
+}
+
+.author {
+    margin-top: 1.3rem;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    color: rgba(107, 114, 128, 1);
+}
+
+@media (max-width: 768px) {
+    .testimonial-grid {
+        justify-content: center;
+    }
+    
+    .testimonial-card {
+        max-width: 90%;
+        margin: 10px 0;
+    }
+}
+
+
+
+.shop-categories {
+    text-align: center;
+    padding: 40px 0;
+}
+
+.categories-grid {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.category-item {
+    width: 200px;
+    height: 50px;
+    background-color: #f1f1f1;
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    border-radius: 30px;
+    border: 1px solid gray;
+    cursor: pointer;
+    align-items: center;
+    font-weight: bold;
+}
+
+.discover-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    height: 60vh;
+    background-color: lightgray;
+    background-image: url('../../assets/discover.png');
+    filter: grayscale(50%);
+    backdrop-filter: opacity(0);
+    width: 100vw;
+    margin-top: 50px;
+    padding: 20px; /* Add padding for better spacing on smaller screens */
+}
+
+.discover-title {
+    font-size: 3rem;
+    max-width: 60vw;
+    text-align: center;
+    color: #000;
+}
+
+.discover-description {
+    font-size: 1.2em;
+    max-width: 60vw;
+    text-align: center;
+    color: #333;
+}
+
+.learn-more {
+    padding: 10px 20px;
+    font-size: 1em;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 1200px) {
+    .discover-title {
+        font-size: 2.5rem; /* Reduce font size */
+    }
+
+    .discover-description {
+        font-size: 1.1em; /* Reduce font size */
+    }
+}
+
+@media (max-width: 900px) {
+    .discover-section {
+        height: auto; /* Allow section to grow based on content */
+        padding: 40px 20px; /* Add more padding */
+    }
+
+    .discover-title {
+        font-size: 2rem; /* Further reduce font size */
+    }
+
+    .discover-description {
+        font-size: 1em; /* Further reduce font size */
+        max-width: 80vw; /* Allow wider content area */
+    }
+
+    .learn-more {
+        font-size: 0.9em; /* Smaller button text */
+    }
+}
+
+@media (max-width: 600px) {
+    .discover-title {
+        font-size: 1.8rem; /* Smaller title font size */
+    }
+
+    .discover-description {
+        font-size: 0.9em; /* Smaller description font size */
+        max-width: 90vw; /* Allow even wider content area */
+    }
+
+    .learn-more {
+        padding: 8px 15px; /* Adjust button padding */
+    }
+}
+
+
+.shop-now-btn button {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    outline: none;
+    border: 0;
+    vertical-align: middle;
+    text-decoration: none;
+    background: transparent;
+    padding: 0;
+    font-size: inherit;
+    font-family: inherit;
+}
+
+.shop-now-btn button.learn-more {
+    width: 12rem;
+    height: auto;
+}
+
+.shop-now-btn button.learn-more .circle {
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    position: relative;
+    display: block;
+    margin: 0;
+    width: 3rem;
+    height: 3rem;
+    background: #171718;
+    border-radius: 1.625rem;
+}
+
+.shop-now-btn  button.learn-more .circle .icon {
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    background: #fff;
+}
+
+.shop-now-btn button.learn-more .circle .icon.arrow {
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    left: 0.625rem;
+    width: 1.125rem;
+    height: 0.125rem;
+    background: none;
+}
+
+.shop-now-btn  button.learn-more .circle .icon.arrow::before {
+    position: absolute;
+    content: "";
+    top: -0.29rem;
+    right: 0.0625rem;
+    width: 0.625rem;
+    height: 0.625rem;
+    border-top: 0.125rem solid #fff;
+    border-right: 0.125rem solid #fff;
+    transform: rotate(45deg);
+}
+
+.shop-now-btn button.learn-more .button-text {
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 0.75rem 0;
+    margin: 0 0 0 1.85rem;
+    color: #282936;
+    font-weight: 700;
+    line-height: 1.6;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.shop-now-btn button:hover .circle {
+    width: 100%;
+}
+
+.shop-now-btn button:hover .circle .icon.arrow {
+    background: #fff;
+    transform: translate(1rem, 0);
+}
+
+.shop-now-btn button:hover .button-text {
+    color: #fff;
+}
+
+.scrollable-container {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 95vw;
+}
+
+@media (max-width: 480px) {
+    .scrollable-container {
+        flex-direction: column;
+    }
+}
